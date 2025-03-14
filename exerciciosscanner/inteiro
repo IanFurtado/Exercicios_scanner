@@ -1,0 +1,23 @@
+package exerciciosscanner;
+
+import java.util.Scanner;
+
+public class inteiro { // atalho class
+
+    public static void main(String[] args) { // atalho psvm
+        Scanner numero = new Scanner(System.in); // criação do scanner
+        
+        while (true) { // sistema de loop
+            System.out.println("Digite um número de inteiro que ele vai aparecer na tela, para sair do programa digite 0"); // mensagem ao usuário
+            int inteiro = numero.nextInt();
+
+            if (inteiro == 0) { // saída
+                System.out.println("Encerrando algoritmo");
+                break; // quebra do sistema de loop
+            } else {
+                System.out.println(inteiro); // mensagem final
+            }
+        }
+        numero.close(); //close do scanner
+    }
+}

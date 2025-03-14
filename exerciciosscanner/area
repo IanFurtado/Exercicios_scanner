@@ -1,0 +1,28 @@
+package exerciciosscanner;
+
+import java.util.Scanner;
+
+public class area { // atalho class
+    public static void main(String[] args) { // atalho psvm
+        Scanner triangulo = new Scanner(System.in); // criação do scanner
+
+        while (true) {
+            System.out.println("Esse algoritmo cálcula a área de um triângulo retângulo, para isso digite a base e a altura e obtenha o resultado. (Para sair do programa digite 0 na base e/ou na altura)"); // mensagem ao usuário
+            System.out.println("Base:"); // pergunta a base
+            long base = triangulo.nextLong(); // input base
+            System.out.println("Altura:"); // pergunta a altura
+            long altura = triangulo.nextLong(); // input altura
+
+            if (base == 0) { // encerramento do programa
+                System.out.println("encerrando programa");
+                break;
+            } else if (altura == 0){ // enceramento do programa
+                System.out.println("encerrando programa");
+                break;
+            } else {
+                System.out.println(base * altura / 2); // resultado da conta e mensagem final para o usuario
+            }
+        }
+        triangulo.close(); // encerramento do scanner
+    }
+}

@@ -1,0 +1,23 @@
+package exerciciosscanner; // nome do pacote
+
+import java.util.Scanner; // importação do scanner
+
+public class tempo { // atalho class
+
+    public static void main(String[] args) { // atalho psvm
+        Scanner ponteiro = new Scanner(System.in); // criação do scanner
+        System.out.println("Digite uma quantidade de segundos e o progrma mostrará quantas horas e quantos minutos são."); // mensagem ao usuário
+
+        int numeros = ponteiro.nextInt(); // entrada do scanner
+        int horas = numeros / 3600; // cálculo das horas
+        int restohora = numeros % 3600; // resto da divisao das horas
+        int segundos = restohora % 60; // cáculo dos segundos
+        int minutos = restohora / 60; // cálculo dos minutos
+
+        System.out.print(horas + " horas "); // mensagem final ao usuário
+        System.out.print(minutos + " minutos ");
+        System.out.print(segundos + " segundos ");
+
+        ponteiro.close(); // encerramento do scanner
+    }
+}

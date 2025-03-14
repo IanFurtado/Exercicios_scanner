@@ -1,0 +1,23 @@
+package exerciciosscanner;
+
+import java.util.Scanner;
+
+public class real { // atalho class
+
+    public static void main(String[] args) { // atalho psvm
+        Scanner numero = new Scanner(System.in);
+        
+        while (true) { // sistema de loop
+            System.out.println("Digite um numero real (com vírgula) que ele vai aparecer na tela, digite 0 para sair do programa"); // mensagem ao usuário
+            double real = numero.nextDouble();
+
+            if (real == 0) { // condição de encerramento
+                System.out.println("Encenrrando algoritmo.");
+                break; // quebra do sistema de loop
+            } else {
+                System.out.println(real); // mensagem final
+            }
+        }
+        numero.close(); // encerramento do loop
+    }
+}
