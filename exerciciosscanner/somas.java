@@ -1,5 +1,3 @@
-package exerciciosscanner;
-
 import java.util.Scanner;
 
 public class somas { 
